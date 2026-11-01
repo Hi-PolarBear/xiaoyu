@@ -1,5 +1,13 @@
 # xiaoyu · 小鱼
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![No Framework](https://img.shields.io/badge/framework-none-2a9d8f?style=flat-square&labelColor=264653)
+![No Build](https://img.shields.io/badge/build-none-2a9d8f?style=flat-square&labelColor=264653)
+![Zero Dependencies](https://img.shields.io/badge/dependencies-0-f4a261?style=flat-square&labelColor=264653)
+![License](https://img.shields.io/github/license/Hi-PolarBear/xiaoyu?style=flat-square&color=2a9d8f&labelColor=264653)
+
 一个为「小鱼」做的单页个人主页。温柔、内敛、偶尔天然呆的 INFP，玩我的世界，闲来无事打打洲。
 
 页面由他的朋友 **饭** 撰写、排版，托管在 GitHub Pages 上。
