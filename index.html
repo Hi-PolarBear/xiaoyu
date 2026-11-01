@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xiaoyu · 小鱼</title>
+<meta name="description" content="小鱼的主页。一个温柔、内敛、偶尔天然呆的男孩，玩我的世界，闲来无事打打洲。">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/icon-64.png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="stage">
+
+  <div class="stage__figure">
+    <figure class="panel">
+      <div class="panel__frame">
+        <img class="panel__img panel__img--day" src="assets/avatar.jpg" width="1080" height="1080"
+             alt="小鱼的头像：一只熊猫、一只白熊、一只棕熊从上方低头看下来，背景是方块形状的森林">
+        <img class="panel__img panel__img--night" src="assets/moon.jpg" width="1600" height="1000"
+             alt="满月，NASA 拍摄的月面照片" loading="lazy">
+      </div>
+      <figcaption class="panel__cap">
+        <span class="cap-day">他的头像 · 一只熊猫、一只白熊、一只棕熊，从上面看你</span>
+        <span class="cap-night">月面 · NASA / Kennedy Space Center，公有领域</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="stage__read">
+
+    <header class="hero">
+      <nav class="nav" aria-label="页面导航">
+        <a href="#about">关于</a>
+        <a href="#letter">信</a>
+        <a href="#games">游戏</a>
+        <a href="#facts">资料</a>
+        <button type="button" class="action" id="night" aria-pressed="false" aria-label="切换白天和黑夜">
+          <span class="action__light">天亮了</span>
+          <span class="action__dark">天黑了</span>
+        </button>
+      </nav>
+
+      <h1 class="wordmark">xiaoyu</h1>
+
+      <p class="hero__line">温柔，内敛，偶尔天然呆。一个玩我的世界、闲来无事打打洲的 INFP，饭替他做了这一页。</p>
+    </header>
+
+    <section class="intro" id="about" data-reveal>
+      <h2 class="intro__h">关于他</h2>
+      <div class="intro__col">
+        <p class="intro__lead">小鱼，中文名就这两个字，没有别的。</p>
+        <p>他是我认识的人里最不吵的一个。说话声音不大，回复慢，句子短，但从来不敷衍。</p>
+        <p>INFP，巨蟹座，七月八日生。这三个标签叠在一起，差不多就是他：把情绪收在里面，把好意放在外面。</p>
+        <p>有点天然呆。你跟他讲一件事，他会认真听完，然后问一个让你愣住的问题。不是笨，是他真的在按自己的节奏想。</p>
+        <p>大部分时间待在家里。这页是我替他做的，他不一定会来看。</p>
+      </div>
+    </section>
+
+    <section class="letter" id="letter" data-reveal>
+      <div class="letter__card">
+        <img class="letter__portrait" src="assets/fan.jpg" width="88" height="88" alt="饭的头像：一个穿米色短袖的男孩，正在踢腿">
+        <h2 class="letter__h">饭写的话</h2>
+        <p>我是饭。</p>
+        <p>跟小鱼认识有些年头了。最开始只是一起开黑，后来变成有事没事聊两句，再后来就成了那种：不用天天说话，但知道人在的关系。</p>
+        <p>他不太会主动。你想起来找他的时候，他永远在；你忙起来忘了他，他也不生气。这种人很少。</p>
+        <p>这页是我写的，字是我打的，版是我排的。他大概会觉得有点夸张，然后回一句「哦，谢谢」。</p>
+        <p>如果你也认识他，就当这是一份补充说明。如果你不认识，那你现在认识了一个还不错的人。</p>
+        <p class="letter__sign">饭</p>
+        <p class="letter__role">替他写这页的人</p>
+      </div>
+    </section>
+
+    <section class="reel" id="reel" aria-labelledby="reelH">
+      <div class="reel__head">
+        <h2 class="reel__h" id="reelH">一段没有视频的片子</h2>
+        <p class="reel__sub">滚轮就是播放键。往下滚，四张图走完二十四秒；往上滚，它倒着放。</p>
+      </div>
+
+      <div class="reel__pin">
+        <div class="player" id="player">
+          <div class="player__screen">
+            <img class="player__frame is-on" src="assets/scene-aurora.jpg" width="1920" height="1280"
+                 alt="南天极光横在印度洋上空，被云层切开" data-frame="0">
+            <img class="player__frame" src="assets/scene-namib.jpg" width="1920" height="1280"
+                 alt="纳米布沙漠，从国际空间站看下去的沙丘纹路" data-frame="1" loading="lazy">
+            <img class="player__frame" src="assets/scene-bahamas.jpg" width="1920" height="1280"
+                 alt="巴哈马群岛周围的浅海，蓝从浅到深" data-frame="2" loading="lazy">
+            <img class="player__frame" src="assets/scene-himalaya.jpg" width="1920" height="1280"
+                 alt="喜马拉雅山脉，从轨道上看见的一整排雪线" data-frame="3" loading="lazy">
+          </div>
+
+          <div class="player__bar">
+            <button type="button" class="player__toggle" id="reelReset" aria-label="回到这一段的开头">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 5.5c3.6 0 6.5 2.9 6.5 6.5s-2.9 6.5-6.5 6.5c-3.2 0-5.9-2.3-6.4-5.4"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 2.4 9.7 5.6 12.9 8.2" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="player__track" id="reelTrack" role="slider" tabindex="0"
+                 aria-label="这一段放到哪里了" aria-valuemin="0" aria-valuemax="24"
+                 aria-valuenow="0" aria-valuetext="开头，极光">
+              <span class="player__fill" id="reelFill"></span>
+            </div>
+
+            <span class="player__time" id="reelTime" aria-hidden="true">00:00 / 00:24</span>
+          </div>
+
+          <div class="player__foot">
+            <p class="player__cap" id="reelCap" aria-live="polite">南天极光 · 印度洋上空 · NASA</p>
+
+            <div class="player__dots" role="group" aria-label="跳到某一段">
+              <button type="button" class="dot is-on" data-go="0" aria-label="第 1 段：极光"></button>
+              <button type="button" class="dot" data-go="1" aria-label="第 2 段：纳米布沙漠"></button>
+              <button type="button" class="dot" data-go="2" aria-label="第 3 段：巴哈马"></button>
+              <button type="button" class="dot" data-go="3" aria-label="第 4 段：喜马拉雅"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="games" id="games" data-reveal>
+      <div class="games__panel">
+        <h2 class="games__h">他玩的两个世界</h2>
+
+        <div class="games__grid">
+          <article class="game">
+            <h3>我的世界</h3>
+            <p>从方块开始。他喜欢挖，喜欢把东西摆整齐，喜欢在自己造的房子里待着不说话。凌晨三点的矿洞，他一个人能挖很久。</p>
+          </article>
+
+          <article class="game">
+            <h3>三角洲行动</h3>
+            <p>闲来无事打打洲。枪法一般，但很稳，属于那种不声不响把活干完的队友。你回头的时候，该清的都清了。</p>
+          </article>
+        </div>
+
+        <figure class="games__delta">
+          <div class="games__delta-frame">
+            <img src="assets/delta.jpg" width="640" height="360" alt="尼罗河三角洲，NASA 卫星影像" loading="lazy">
+          </div>
+          <figcaption>真正的三角洲 · 尼罗河入海口，从太空看 · NASA</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="facts" id="facts" data-reveal>
+      <h2 class="facts__h">资料</h2>
+
+      <div class="facts__grid">
+        <dl class="facts__list">
+          <div class="fact" data-reveal-child><dt>生日</dt><dd>七月八日</dd></div>
+          <div class="fact" data-reveal-child><dt>星座</dt><dd>巨蟹座</dd></div>
+          <div class="fact" data-reveal-child><dt>MBTI</dt><dd>INFP</dd></div>
+          <div class="fact" data-reveal-child><dt>常驻地</dt><dd>家里</dd></div>
+          <div class="fact" data-reveal-child><dt>状态</dt><dd>发呆中</dd></div>
+          <div class="fact" data-reveal-child><dt>好朋友</dt><dd>饭</dd></div>
+        </dl>
+
+        <figure class="facts__moon">
+          <div class="facts__moon-frame">
+            <img src="assets/moon.jpg" width="1600" height="1000" alt="满月，NASA 拍摄的月面照片" loading="lazy">
+          </div>
+          <figcaption>月亮 · 巨蟹座的守护星 · NASA</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p class="foot__big">这页是 饭 写的。</p>
+      <p class="foot__note">
+        图片：头像是他自己的；月面、三角洲，以及片子里那四张（极光、纳米布、巴哈马、喜马拉雅）都来自 NASA，公有领域。
+        字体：STIX Two Text 与 Noto Serif SC。片子没有视频，是滚动放出来的。
+      </p>
+      <p class="foot__links">
+        <a href="#about">回到开头</a>
+        <a href="#facts">资料</a>
+      </p>
+    </footer>
+
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
