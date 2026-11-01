@@ -44,9 +44,7 @@ npx serve .
 
 站点通过 **GitHub Pages** 从仓库根目录直接发布，无需构建：
 
-1. 推送到 `main` 分支
-2. 仓库 Settings → Pages → Source 选择 `Deploy from a branch`，分支 `main`、目录 `/`（root）
-3. 稍等片刻，访问 <https://hi-polarbear.github.io/xiaoyu/>
+访问 <https://hi-polarbear.github.io/xiaoyu/>
 
 ## 图片与字体
 
@@ -63,6 +61,3 @@ npx serve .
 ## 作者
 
 **Hi-PolarBear** — 替他写这页的人
-
-- GitHub：[@Hi-PolarBear](https://github.com/Hi-PolarBear)
-- 邮箱：gugugagamc@outlook.com
